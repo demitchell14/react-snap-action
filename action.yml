@@ -44,6 +44,8 @@ runs:
         {
           "reactSnap": {
             "source": "${{ inputs.output }}",
+            "skipThirdPartyRequests": true,
+            "preconnectThirdParty": false,
             "puppeteerArgs": [
               "--no-sandbox",
               "--disable-setuid-sandbox",
